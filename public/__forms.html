@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+  This file is never linked or visited by users. It exists solely so Netlify's
+  build-time form parser can detect the "claim-review" and "contact" forms,
+  which are otherwise rendered by React client components. Keep the field
+  `name` attributes here in sync with src/components/forms/ClaimReviewForm.tsx
+  and src/components/forms/ContactForm.tsx.
+-->
+<html lang="en">
+  <head><meta charset="utf-8" /><title>Form detection</title></head>
+  <body>
+    <form name="claim-review" data-netlify="true" data-netlify-honeypot="bot-field" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="claim-review" />
+      <input name="bot-field" />
+      <input name="first-name" />
+      <input name="last-name" />
+      <input name="phone" />
+      <input name="email" />
+      <input name="state" />
+      <input name="county" />
+      <input name="claim-type" />
+      <input name="property-address" />
+      <input name="case-number" />
+      <input name="name-on-record" />
+      <input name="approximate-amount" />
+      <input name="person-deceased" />
+      <input name="relationship-to-person" />
+      <textarea name="additional-information"></textarea>
+      <input name="consent" />
+    </form>
+
+    <form name="contact" data-netlify="true" data-netlify-honeypot="bot-field" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact" />
+      <input name="bot-field" />
+      <input name="name" />
+      <input name="email" />
+      <input name="phone" />
+      <textarea name="message"></textarea>
+      <input name="consent" />
+    </form>
+  </body>
+</html>
