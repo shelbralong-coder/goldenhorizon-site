@@ -54,6 +54,13 @@ export default function HeirsEstatesPage() {
             priority
             className="object-cover object-right"
           />
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(to right, var(--color-navy) 0%, var(--color-navy) 32%, rgba(7,26,46,0.85) 45%, rgba(7,26,46,0) 65%)",
+            }}
+          />
         </div>
         <Container className="relative">
           <div className="max-w-xl lg:max-w-md">
